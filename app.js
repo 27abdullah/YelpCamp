@@ -21,7 +21,7 @@ const helmet = require("helmet");
 const MongoStore = require('connect-mongo')
 
 
-const dbUrl = 'mongodb://localhost:27017/yelp-camp' //process.env.DB_URL 
+const dbUrl = process.env.DB_URL 
 mongoose.connect(dbUrl, {
     useNewUrlParser: true,
     useCreateIndex: true,
